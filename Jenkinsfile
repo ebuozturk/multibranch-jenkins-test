@@ -2,7 +2,7 @@ pipeline {
     agent none
     stages {
         stage('example build') {
-            agent{
+            agent {
                 docker 'maven:3.8.6-eclipse-temurin-11'
             }
             steps {
